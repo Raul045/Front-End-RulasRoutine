@@ -12,6 +12,8 @@ export class NavbarComponent {
 
   title = 'RulasRutine';
   logo: string = "assets/Imagenes/logo.png";
+  menu: string = "assets/Imagenes/menu.png";
+  cerrar: string = "assets/Imagenes/cerrar.png";
 
   goToLogin() {
     this.router.navigate(['/login']);
