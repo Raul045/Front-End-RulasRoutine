@@ -10,6 +10,8 @@ import { RegisterComponent } from './Componentes/register/register.component';
 import { UserProfileComponent } from './Componentes/user-profile/user-profile.component';
 import { RutineResumeComponent } from './Componentes/rutine-resume/rutine-resume.component';
 import { RutineComponent } from './Componentes/rutine/rutine.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { RutineComponent } from './Componentes/rutine/rutine.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
