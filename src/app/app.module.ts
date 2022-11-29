@@ -12,6 +12,7 @@ import { RutineResumeComponent } from './Componentes/rutine-resume/rutine-resume
 import { RutineComponent } from './Componentes/rutine/rutine.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RutinasComponent } from './Models/rutinas/rutinas.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     UserProfileComponent,
     RutineResumeComponent,
     RutineComponent,
+    RutinasComponent,
   ],
   imports: [
     BrowserModule,
