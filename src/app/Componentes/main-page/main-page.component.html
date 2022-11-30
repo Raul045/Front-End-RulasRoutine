@@ -17,15 +17,15 @@
         </p>
         <br>
         <div class="redes">
-          <img [src]="facebook" alt="" width="50px" height="50px">
-          <img [src]="youtube" alt="" width="50px" height="50px">
-          <img [src]="Twiter" alt="" width="50px" height="50px">
-          <img [src]="instagram" alt="" width="50px" height="50px">
+          <img id="imgRedes" [src]="facebook" alt="">
+          <img id="imgRedes" [src]="youtube" alt="">
+          <img id="imgRedes" [src]="Twiter" alt="">
+          <img id="imgRedes" [src]="instagram" alt="">
         </div>
       </div>
       <div class="t2 col-7">
         <p></p>
-        <img [src]="Ejercicios" width="450px" height="250px" alt="" align="right" style="border-radius: 10px;">
+        <img [src]="Ejercicios" id="imageAbout" alt="" align="right">
       </div>
     </div>
   </div>
@@ -46,18 +46,18 @@
         <div class="row">
           <div class="pt1 col-6">
             <p class="textnormal">Resistencia</p>
-            <img class="textnormal" [src]="Resistencia" alt="" width="120px" height="80px">
+            <img class="imgEjercicios" [src]="Resistencia" alt="">
             <br>
             <br>
             <p class="textnormal">Equilibrio</p>
-            <img class="textnormal" [src]="Equilibrio" alt="" width="120px" height="80px">
+            <img class="imgEjercicios" [src]="Equilibrio" alt="">
           </div>
           <div class="pt2 col-6">
             <p class="textnormal">Fortalecimiento</p>
-            <img class="textnormal" [src]="Fortalecimiento" alt="" width="120px" height="80px" align="center">
+            <img class="imgEjercicios" [src]="Fortalecimiento" alt="" align="center">
             <br><br>
             <p class="textnormal">Flexbilidad</p>
-            <img class="textnormal" [src]="Flexibilidad" alt="" width="120px" height="80px">
+            <img class="imgEjercicios" [src]="Flexibilidad" alt="">
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@
             </p>
           </div>
           <div class="col-12">
-            <img [src]="DescripcionEjercicio" alt="" width="200px" height="200px" align="right">
+            <img [src]="DescripcionEjercicio" alt="" class="imgEjercicioD" align="right">
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@
         <div class="box">
           <h2>SIGUENOS</h2>
           <div class="red-social">
-            <a href="#" class="fa fa-facebook"></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
             <a href="#" class="fa fa-instagram"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-youtube"></a>
