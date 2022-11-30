@@ -346,6 +346,13 @@ a:hover {
 .pie-pagina .grupo-2 small {
   font-size: 15px;
 }
+.icon-social{
+  transition: 300ms;
+  cursor: pointer;
+}
+.icon-social:hover{
+  transform: scale(1.1);
+}
 
 @media screen and (max-width:800px) {
   .pie-pagina .grupo-1 {
