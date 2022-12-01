@@ -13,6 +13,8 @@ import { RutineComponent } from './Componentes/rutine/rutine.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MakeRutineComponent } from './Componentes/make-rutine/make-rutine.component';
+import { TableUsuariosComponent } from './componentes/table-usuarios/table-usuarios.component';
+import { TableEjerciciosComponent } from './componentes/table-ejercicios/table-ejercicios.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { MakeRutineComponent } from './Componentes/make-rutine/make-rutine.compo
     RutineResumeComponent,
     RutineComponent,
     MakeRutineComponent,
+    TableUsuariosComponent,
+    TableEjerciciosComponent,
   ],
   imports: [
     BrowserModule,

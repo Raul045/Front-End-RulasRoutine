@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.container-fluid {
+  font-family: 'Bebas Neue';
+  width: auto;
+}
+
+@media (max-witdh: 700px) {
+  .title{
+    width: 100%;
+  }
+}
+.title{
+  border-radius: 0px 10px 10px 0px;
+  width: 50%;
+}
+#titulo{
+  margin-right: 50px;
+  padding: 5px;
+}
+#logo{
+  border-radius: 60px;
+  height: 65px;
+  width: 65px;
+}
+label{
+  font-size: 10px;
+}
