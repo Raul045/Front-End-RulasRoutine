@@ -24,6 +24,7 @@ a{
 
 .card-body {
   background-color: #EAEAEA;
+  border-radius: 5px;
 }
 
 .btn{

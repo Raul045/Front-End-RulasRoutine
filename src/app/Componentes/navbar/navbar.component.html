@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<div>
+<!-- <div>
   <nav class="p-2">
     <li><a href="exercises">Ejercicios</a></li>
     <li><a href="about">Sobre nosotros</a></li>
@@ -7,4 +7,53 @@
     <li><a href="comments">Comentarios</a></li>
     <li><a href="/login" (click)="goToLogin()">Iniciar Sesion</a></li>
   </nav>
-</div>
+</div> -->
+
+<!-- <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <input type="checkbox" id="check">
+    <label for="check" class="drawer">
+      <img [src]="menu" alt="" width="40px" height="40px">
+    </label>
+    <div class="menu-box">
+      <a class="navbar-brand" id="item" href="#">
+        Ejercicios
+      </a>
+      <a class="navbar-brand" id="item" href="#">
+        Sobre Nosotros
+      </a>
+      <img [src]="logo" alt="" id="item" width="100" height="">
+      <a class="navbar-brand" href="#" id="item">
+        Comentarios
+      </a>
+      <a class="navbar-brand" id="item" href="/login" (click)="goToLogin()">
+        Iniciar Sesion
+      </a>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg text-center" id="nav-total">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img [src]="logo" width="100px" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="navbar-brand">
+          <a class="nav-link" href="#">Ejercicios</a>
+        </li>
+        <li class="navbar-brand">
+          <a class="nav-link" href="#">Sobre Nosotros</a>
+        </li>
+        <li class="navbar-brand">
+          <a class="nav-link" href="#">Comentarios</a>
+        </li>
+        <li class="navbar-brand">
+          <a class="nav-link" href="/login" (click)="goToLogin()">Iniciar Sesion</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

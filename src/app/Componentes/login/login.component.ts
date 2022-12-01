@@ -9,6 +9,8 @@ export class LoginComponent implements OnInit {
 
   constructor() { }
 
+  logo: string = "assets/Imagenes/LogoNegro.png";
+
   ngOnInit(): void {
   }
 
