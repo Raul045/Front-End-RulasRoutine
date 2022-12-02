@@ -20,21 +20,25 @@ export class RutineResumeComponent implements OnInit {
 
   ejercicio:any[] = [
     {
+      "id":1,
       "name": "Push Ups",
       "serie": 2,
       "repeticiones":15
     },
     {
+      "id":2,
       "name": "Sentadillas",
       "serie": 3,
       "repeticiones":10
     },
     {
+      "id":3,
       "name": "Push Ups",
       "serie": 2,
       "repeticiones":15
     },
     {
+      "id":4,
       "name": "Push Ups",
       "serie": 2,
       "repeticiones":15
