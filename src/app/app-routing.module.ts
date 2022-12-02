@@ -6,8 +6,13 @@ import { LoginComponent } from './Componentes/login/login.component';
 import { MakeRutineComponent } from './Componentes/make-rutine/make-rutine.component';
 import { RutineResumeComponent } from './Componentes/rutine-resume/rutine-resume.component';
 import { TableUsuariosComponent } from './Componentes/table-usuarios/table-usuarios.component';
+import { TableEjerciciosComponent } from './Componentes/table-ejercicios/table-ejercicios.component';
 
 const routes: Routes = [
+  {
+    path: 'ejercicios',
+    component: TableEjerciciosComponent
+  },
   {
     path: 'usuarios',
     component: TableUsuariosComponent
