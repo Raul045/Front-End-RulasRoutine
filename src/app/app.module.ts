@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MakeRutineComponent } from './Componentes/make-rutine/make-rutine.component';
 import { TableUsuariosComponent } from './Componentes/table-usuarios/table-usuarios.component';
 import { TableEjerciciosComponent } from './Componentes/table-ejercicios/table-ejercicios.component';
+import { RegistrarPesoComponent } from './Componentes/registrar-peso/registrar-peso.component';
 import { FooterComponent } from './Componentes/footer/footer.component';
 
 @NgModule({
@@ -30,6 +31,7 @@ import { FooterComponent } from './Componentes/footer/footer.component';
     MakeRutineComponent,
     TableUsuariosComponent,
     TableEjerciciosComponent,
+    RegistrarPesoComponent,
     FooterComponent,
   ],
   imports: [

@@ -224,7 +224,7 @@ a:hover {
 
 
 
-#slider {
+/* #slider {
   margin: 0 auto;
   width: 800px;
   max-width: 100%;
@@ -352,12 +352,17 @@ a:hover {
      max-width: calc(100% - 140px);
      margin: 0 auto;
   }
-}
+} */
 
 
 /*Card usuarios*/
-/* .card {
-  width: 390px;
+
+.container{
+  justify-content: center;
+  display: flex;
+}
+.card {
+  width: 290px;
   height: 354px;
   background: #07182E;
   position: relative;
@@ -366,14 +371,12 @@ a:hover {
   place-items: center;
   overflow: hidden;
   border-radius: 20px;
-  justify-content: end;
-  align-items: center;
 }
 
 .card h2 {
   z-index: 1;
   color: white;
-  font-size: 25px;
+  font-size: 1em;
 }
 
 .card::before {
@@ -400,20 +403,23 @@ a:hover {
   content: '';
   position: absolute;
   background: #07182E;
+  ;
   inset: 5px;
   border-radius: 15px;
-}
-
+}  
 
 .textoComentarios {
   font-size: 15px;
   color: #EAEAEA;
-  z-index: 1;
+  z-index: 1
 }
 
-#cardsUsers{
-  padding-left: 250px;
-} */
+.imgComentarios{
+  z-index: 1;
+  width: 250px;
+  height: 180px;
+  border-radius: 10px;
+}
 
 /* .logoFootter {
     padding-top: 25px;
@@ -451,16 +457,21 @@ a:hover {
   }
 
   /* Comentarios */
-  /*
-    .card{
-    width: 200px;
-    height: 214px;
+  #textoComentarios{
+    font-size: 15px;
   }
-  #cardsUsers{
-    padding-left: 10px;
-    display: block;
-    margin-right: 90px;
-  } */
+  #titleComentarios{
+    font-size: 25px;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .Comentarios{
+    height: 1400px;
+  }
 
 }
 
@@ -483,14 +494,20 @@ a:hover {
     font-size: 15px;
     width: 100%;
   }
+  .pt1{
+    align-items: center;
+    justify-content: center;
+  }
   .imgEjercicios{
-    width: 100px;
+    width: 85px;
     height: 60px;
+    text-align: center;
   }
   .imgEjercicioD{
     width: 100px;
     height: 100px;
   }
+  /* Comentarios */
   #textoComentarios{
     font-size: 15px;
   }
@@ -498,7 +515,26 @@ a:hover {
     font-size: 25px;
   }
 
+  .container{
+    justify-content: center;
+    display: grid;
+  }
+  .card{
+    width: 190px;
+    height: 254px;
+  }
+
+  .imgComentarios{
+    width: 150px;
+    height: 90px;
+  }
+  .Comentarios{
+    height: 1000px;
+  }
+
 }
+
+
 /* Termina el Diseño Responsivo */
 
 
