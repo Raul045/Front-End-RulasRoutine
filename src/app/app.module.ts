@@ -13,8 +13,9 @@ import { RutineComponent } from './Componentes/rutine/rutine.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MakeRutineComponent } from './Componentes/make-rutine/make-rutine.component';
-import { TableUsuariosComponent } from './componentes/table-usuarios/table-usuarios.component';
-import { TableEjerciciosComponent } from './componentes/table-ejercicios/table-ejercicios.component';
+import { TableUsuariosComponent } from './Componentes/table-usuarios/table-usuarios.component';
+import { TableEjerciciosComponent } from './Componentes/table-ejercicios/table-ejercicios.component';
+import { FooterComponent } from './Componentes/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { TableEjerciciosComponent } from './componentes/table-ejercicios/table-e
     MakeRutineComponent,
     TableUsuariosComponent,
     TableEjerciciosComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
