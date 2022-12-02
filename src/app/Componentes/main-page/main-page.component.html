@@ -161,50 +161,55 @@
         <br />
         <p class="title1">Comentarios</p>
       </div>
-      <div id="slider">
-        <input type="radio" name="slider" id="slide1" checked>
-        <input type="radio" name="slider" id="slide2">
-        <input type="radio" name="slider" id="slide3">
-        <input type="radio" name="slider" id="slide4">
-        <div id="slides">
-           <div id="overflow">
-              <div class="inner">
-                 <div class="slide slide_1">
-                    <div class="slide-content">
-                       <h2 id="titleComentarios">Mario Alfonso</h2>
-                       <br>
-                       <p id="textoComentarios">Excelentes ejercicios</p>
-                       <p id="textoComentarios">adaptados a mi fisico</p>
-                    </div>
-                 </div>
-                 <div class="slide slide_2">
-                    <div class="slide-content">
-                       <h2 id="titleComentarios">Sara Contreras</h2>
-                       <p id="textoComentarios">Excelentes rutinas</p>
-                       <p id="textoComentarios">e indicaciones para cada ejercicio</p>
-                    </div>
-                 </div>
-                 <div class="slide slide_3">
-                    <div class="slide-content">
-                       <h2 id="titleComentarios">Oscar Martines</h2>
-                       <p id="textoComentarios">Excelente servicio,</p>
-                       <p id="textoComentarios">con buenas rutinas y facil de hacer</p>
-                    </div>
-                 </div>
-              </div>
-           </div>
+      <div class="container">
+        <div class="col-3" id="cardsUsers">
+          <div class="card">
+            <img
+              loading="lazy"
+              class="imgComentarios"
+              [src]="Usuario1"
+              alt=""
+            />
+            <br />
+            <h2>Mario Alfonso</h2>
+            <p class="textoComentarios">
+              Excelentes ejercicios adaptados a mi fisico
+            </p>
+          </div>
         </div>
-        <div id="controls">
-           <label for="slide1"></label>
-           <label for="slide2"></label>
-           <label for="slide3"></label>
+        <br>
+        <div class="col-3" id="cardsUsers">
+          <div class="card">
+            <img
+              loading="lazy"
+              class="imgComentarios"
+              [src]="Usuario2"
+              alt=""
+            />
+            <br />
+            <h2>Sara Contreras</h2>
+            <p class="textoComentarios">
+              Excelentes rutinas e indicaciones para cada ejercicio
+            </p>
+          </div>
         </div>
-        <div id="bullets">
-           <label for="slide1"></label>
-           <label for="slide2"></label>
-           <label for="slide3"></label>
+        <br>
+        <div class="col-3" id="cardsUsers">
+          <div class="card">
+            <img
+              loading="lazy"
+              class="imgComentarios"
+              [src]="Usuario3"
+              alt=""
+            />
+            <br />
+            <h2>Oscar Martines</h2>
+            <p class="textoComentarios">
+              Excelente servicio, con buenas rutinas y facil de hacer
+            </p>
+          </div>
         </div>
-     </div>
+      </div>
     </div>
   </div>
 <br /><br /><br />

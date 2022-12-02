@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MakeRutineComponent } from './Componentes/make-rutine/make-rutine.component';
 import { TableUsuariosComponent } from './componentes/table-usuarios/table-usuarios.component';
 import { TableEjerciciosComponent } from './componentes/table-ejercicios/table-ejercicios.component';
+import { RegistrarPesoComponent } from './Componentes/registrar-peso/registrar-peso.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { TableEjerciciosComponent } from './componentes/table-ejercicios/table-e
     MakeRutineComponent,
     TableUsuariosComponent,
     TableEjerciciosComponent,
+    RegistrarPesoComponent,
   ],
   imports: [
     BrowserModule,
