@@ -5,8 +5,13 @@ import { RegisterComponent } from './Componentes/register/register.component';
 import { LoginComponent } from './Componentes/login/login.component';
 import { MakeRutineComponent } from './Componentes/make-rutine/make-rutine.component';
 import { RutineResumeComponent } from './Componentes/rutine-resume/rutine-resume.component';
+import { TableUsuariosComponent } from './Componentes/table-usuarios/table-usuarios.component';
 
 const routes: Routes = [
+  {
+    path: 'usuarios',
+    component: TableUsuariosComponent
+  },
   {
     path: 'crear-rutina',
     component: MakeRutineComponent
