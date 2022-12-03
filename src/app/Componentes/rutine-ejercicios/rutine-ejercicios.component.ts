@@ -1,16 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-rutine-ejercicios',
   templateUrl: './rutine-ejercicios.component.html',
   styleUrls: ['./rutine-ejercicios.component.css']
 })
-export class RutineEjerciciosComponent implements OnInit {
 
-  constructor() { }
+export class RutineEjerciciosComponent {
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+
+  console = console;
+
+  pageActual: number = 1;
+  
+  responsiveP: boolean = true;
 
   tipoEjercicio:any[] = [
     {
@@ -54,7 +62,11 @@ export class RutineEjerciciosComponent implements OnInit {
     
   ]
 
-  pageActual: number = 1;
-  responsiveP: boolean = true;
+
+  RutinaTerminada (){
+    if(this.pageActual == this.ejercicio.length){
+      this.router.navigate(['/felicidades'])
+    }
+  }
 
 }

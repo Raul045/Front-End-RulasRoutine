@@ -21,6 +21,7 @@ import { RegistrarPesoComponent } from './Componentes/registrar-peso/registrar-p
 import { FooterComponent } from './Componentes/footer/footer.component';
 import { RutineEjerciciosComponent } from './Componentes/rutine-ejercicios/rutine-ejercicios.component';
 import { AltaEntrenadoresComponent } from './Componentes/alta-entrenadores/alta-entrenadores.component';
+import { FelicidadesComponent } from './Componentes/felicidades/felicidades.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { AltaEntrenadoresComponent } from './Componentes/alta-entrenadores/alta-
     FooterComponent,
     RutineEjerciciosComponent,
     AltaEntrenadoresComponent,
+    FelicidadesComponent,
   ],
   imports: [
     BrowserModule,
