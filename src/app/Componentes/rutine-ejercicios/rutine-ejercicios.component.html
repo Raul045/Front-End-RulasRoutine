@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="title text-end">
+    <h5 *ngFor="let item1 of tipoEjercicio" id="titulo">{{item1.tipo}}</h5>
+</div>
+<br>
+<div class="container col-sm">
+    <ul style="list-style: none;">
+      <li *ngFor="let item of ejercicio | paginate: { itemsPerPage: 1, currentPage: pageActual }">
+        <div class="title-ejercicio">
+          <h1>{{item.name}}</h1>
+        </div>
+        <div class="description-ejercicio">
+          <p>{{item.descripcion}}</p>
+        </div>
+        <div class="image-ejercicio">
+          <img src="{{item.images}}" class="img-fluid" id="imagen" alt="...">
+        </div>
+      </li>
+    </ul>
+    <pagination-controls (responsive)="responsiveP" previousLabel="Anterior"  (pageChange)="pageActual = $event" nextLabel="Siguiente"></pagination-controls>
+    <br>
+</div>
+<app-footer></app-footer>

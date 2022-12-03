@@ -26,3 +26,11 @@
 label{
   font-size: 10px;
 }
+
+.btn {
+  font-size: 25px;
+  height: 60px;
+  background-color: #00ABB3;
+  color: #EAEAEA;
+  width: 170px;
+}
