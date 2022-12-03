@@ -9,6 +9,45 @@ export class TableEjerciciosComponent implements OnInit {
 
   constructor() { }
 
+   ejercicios:any [] = [
+    {
+      "id":1,
+      "nombre": "Push Up",
+      "description": "Lagartijas",
+     },
+   {
+      "id":1,
+      "nombre": "Push Up",
+      "description": "Lagartijas",
+     },
+   {
+      "id":1,
+      "nombre": "Push Up",
+      "description": "Lagartijas",
+     },
+   {
+      "id":1,
+      "nombre": "Push Up",
+      "description": "Lagartijas",
+     },
+
+   {
+      "id":1,
+      "nombre": "Push Up",
+      "description": "Lagartijas",
+     },
+   {
+      "id":1,
+      "nombre": "Push Up",
+      "description": "Lagartijas",
+     },
+   {
+      "id":1,
+      "nombre": "Push Up",
+      "description": "Lagartijas",
+    },
+   ]
+
   ngOnInit(): void {
   }
 
