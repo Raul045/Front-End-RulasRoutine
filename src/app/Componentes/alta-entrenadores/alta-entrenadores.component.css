@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.container{
-  align-items: center;
+.container {
   font-family: 'Bebas Neue';
 }
-label, input{
+
+label,
+input {
   font-size: 17px;
 }
-input{
+
+input {
   height: 35px;
 }
 
-span{
+span {
   font-size: 20px;
 }
-a{
+
+a {
   font-size: 18px;
 }
 
-.card{
+.card {
   margin: auto;
 }
 
@@ -27,10 +30,28 @@ a{
   border-radius: 5px;
 }
 
-.btn{
+.btn {
   font-size: 15px;
   height: 40px;
   background-color: #00ABB3;
   color: #EAEAEA;
   width: 200px;
+}
+
+@media (max-width: 500px) {
+  #titulo {
+    margin-left: 45px;
+    padding: 5px;
+    font-size: 20px;
+  }
+}
+
+.title {
+  border-radius: 0px 10px 10px 0px;
+  width: 50%;
+}
+
+#titulo {
+  margin-right: 50px;
+  padding: 5px;
 }
