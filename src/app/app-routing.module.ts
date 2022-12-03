@@ -10,6 +10,7 @@ import { TableUsuariosComponent } from './Componentes/table-usuarios/table-usuar
 import { TableEjerciciosComponent } from './Componentes/table-ejercicios/table-ejercicios.component';
 import { RutineEjerciciosComponent } from './Componentes/rutine-ejercicios/rutine-ejercicios.component';
 import { AltaEntrenadoresComponent } from './Componentes/alta-entrenadores/alta-entrenadores.component';
+import { FelicidadesComponent } from './Componentes/felicidades/felicidades.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'ejercicios-rutina',
     component: RutineEjerciciosComponent
+  },
+  {
+    path: 'felicidades',
+    component: FelicidadesComponent
   },
   {
     path: 'blog',
