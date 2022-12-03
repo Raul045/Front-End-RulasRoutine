@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.container{
+  font-family: 'Bebas Neue';
+  width: auto;
+}
+
+
+.title{
+    background-color: #eaeaee;
+    text-align: center;
+    border-radius: 0px 10px 10px 0px;
+    width: 40%;
+    font-family: 'Bebas Neue';
+    height: 100px;
+}
+
+#titulo{
+    margin-right: 50px;
+    padding: 33px;
+}
+.title-ejercicio{
+    color: #eaeaee;
+}
+
+.description-ejercicio{
+    padding-left: 10px;
+    font-size: 20px;
+    color: #eaeaee;
+}
+#imagen{
+    width: 450px;
+    height: 350px;
+}
+
+
+@media screen and (max-width: 414px){
+    .pagination{
+        font-size: 10px;
+    }
+}

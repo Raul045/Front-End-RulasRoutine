@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import {NgxPaginationModule} from 'ngx-pagination';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './Componentes/main-page/main-page.component';
@@ -17,6 +19,7 @@ import { TableUsuariosComponent } from './Componentes/table-usuarios/table-usuar
 import { TableEjerciciosComponent } from './Componentes/table-ejercicios/table-ejercicios.component';
 import { RegistrarPesoComponent } from './Componentes/registrar-peso/registrar-peso.component';
 import { FooterComponent } from './Componentes/footer/footer.component';
+import { RutineEjerciciosComponent } from './Componentes/rutine-ejercicios/rutine-ejercicios.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +36,14 @@ import { FooterComponent } from './Componentes/footer/footer.component';
     TableEjerciciosComponent,
     RegistrarPesoComponent,
     FooterComponent,
+    RutineEjerciciosComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
