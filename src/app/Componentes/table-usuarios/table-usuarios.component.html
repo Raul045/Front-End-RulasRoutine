@@ -1,0 +1,40 @@
+<div class="container">
+  <app-navbar></app-navbar>
+  <div class="mt-4">
+    <h3 class="text-light">
+      usuarios
+    </h3>
+    <div class="table-responsive">
+      <table class="table text-light">
+        <thead class="text-center">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Email</th>
+            <th scope="col">Experiencia</th>
+            <th scope="col">Rol</th>
+            <th scope="col">Acción</th>
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          <tr *ngFor="let usuario of usuariosArray">
+            <!-- <th scope="row" [innerHTML]="usuario."></th>
+            <td [innerHTML]="usuariosArray.nombre"></td>
+            <td [innerHTML]="usuario.apellido"></td>
+            <td [innerHTML]="usuario.edad"></td>
+            <td [innerHTML]="usuario.email"></td>
+            <td [innerHTML]="usuario.experiencia"></td>
+            <td [innerHTML]="usuario.rol"></td> -->
+            <td class="form-group">
+              <button class="btn btn-info mt-1" style="font-size: auto; width: auto; margin-right: 10px;">editar</button>
+              <button class="btn btn-danger mt-1">eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

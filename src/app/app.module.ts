@@ -14,6 +14,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { MakeRutineComponent } from './Componentes/make-rutine/make-rutine.component';
 // import { MyInterceptor } from './interceptors/myinterceptor';
+import { TableUsuariosComponent } from './Componentes/table-usuarios/table-usuarios.component';
+import { TableEjerciciosComponent } from './Componentes/table-ejercicios/table-ejercicios.component';
+import { RegistrarPesoComponent } from './Componentes/registrar-peso/registrar-peso.component';
+import { FooterComponent } from './Componentes/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { MakeRutineComponent } from './Componentes/make-rutine/make-rutine.compo
     RutineResumeComponent,
     RutineComponent,
     MakeRutineComponent,
+    TableUsuariosComponent,
+    TableEjerciciosComponent,
+    RegistrarPesoComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

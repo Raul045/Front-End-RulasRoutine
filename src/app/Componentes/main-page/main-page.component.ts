@@ -13,7 +13,6 @@ export class MainPageComponent implements OnInit {
   }
 
   title = 'RulasRutine';
-  logo: string = "assets/Imagenes/logo.png";
   logoIcon: string = "assets/Imagenes/logo-icon.ico"
   DescripcionEjercicio:string = "assets/Imagenes/DescripEjercicio.png";
   EjercicioRelleno:string = "assets/Imagenes/EjercicioRelleno.jpg";

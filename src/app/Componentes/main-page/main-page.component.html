@@ -1,5 +1,5 @@
-<div class="container">
-  <app-navbar></app-navbar>
+
+<app-navbar></app-navbar>
   <!-- Imagenes que se pone en el foro como relleno -->
   <div class="imagenes">
     <img
@@ -7,14 +7,13 @@
       [src]="Relleno2"
       alt=""
       width="100%"
-      height="500px"
       style="opacity: 90%; border-radius: 8px"
     />
   </div>
   <br />
   <br />
   <!-- Sobre nosotros -->
-  <div class="About1">
+  <div class="About1" id="SobreNosotros">
     <div class="row align-items-start">
       <div class="t1 col-5">
         <p class="title1">Sobre nosotros</p>
@@ -27,16 +26,16 @@
         <br />
         <div class="d-flex redes col-12">
           <div class="col-md-3 icon-social">
-            <img class="img-social" [src]="facebook" alt="" width="30%" />
+            <img class="img-social" id="imgRedes" [src]="facebook" alt="" />
           </div>
           <div class="col-md-3 icon-social">
-            <img class="img-social" [src]="youtube" alt="" width="30%" />
+            <img class="img-social" id="imgRedes" [src]="youtube" alt="" />
           </div>
           <div class="col-md-3 icon-social">
-            <img class="img-social" [src]="Twiter" alt="" width="30%" />
+            <img class="img-social" id="imgRedes" [src]="Twiter" alt="" />
           </div>
           <div class="col-md-3 icon-social">
-            <img class="img-social" [src]="instagram" alt="" width="30%" />
+            <img class="img-social" id="imgRedes" [src]="instagram" alt="" />
           </div>
         </div>
       </div>
@@ -46,10 +45,9 @@
           loading="lazy"
           [src]="Ejercicios"
           width="450px"
-          height="250px"
+          id="imageAbout"
           alt=""
           align="right"
-          style="border-radius: 10px"
         />
       </div>
     </div>
@@ -57,7 +55,7 @@
   <br />
   <!-- Imagenes que se pone en el foro como relleno -->
   <div class="imagenes">
-    <img loading="lazy" [src]="Estirando" alt="" width="100%" height="500px" />
+    <img loading="lazy" [src]="Estirando" alt="" width="100%" height="350px" style="border-radius: 10px;"/>
   </div>
   <br />
   <br />
@@ -72,7 +70,7 @@
           <div class="pt1 col-6">
             <p class="textnormal">Resistencia</p>
             <img
-              class="textnormal"
+              class="imgEjercicios"
               loading="lazy"
               [src]="Resistencia"
               alt=""
@@ -83,7 +81,7 @@
             <br />
             <p class="textnormal">Equilibrio</p>
             <img
-              class="textnormal"
+              class="imgEjercicios"
               loading="lazy"
               [src]="Equilibrio"
               alt=""
@@ -94,7 +92,7 @@
           <div class="pt2 col-6">
             <p class="textnormal">Fortalecimiento</p>
             <img
-              class="textnormal"
+              class="imgEjercicios"
               loading="lazy"
               [src]="Fortalecimiento"
               alt=""
@@ -105,7 +103,7 @@
             <br /><br />
             <p class="textnormal">Flexbilidad</p>
             <img
-              class="textnormal"
+              class="imgEjercicios"
               loading="lazy"
               [src]="Flexibilidad"
               alt=""
@@ -132,6 +130,7 @@
           <div class="col-12">
             <img
               loading="lazy"
+              class="imgEjercicioD"
               [src]="DescripcionEjercicio"
               alt=""
               width="200px"
@@ -152,113 +151,120 @@
       alt=""
       width="100%"
       height="500px"
-      style="opacity: 90%; border-radius: 8px"
+      style="opacity: 90%; border-radius: 10px"
     />
   </div>
   <br /><br /><br />
   <!-- Apartado de Comentarios -->
   <div class="Comentarios" id="comments">
-    <div class="row align-items-end">
+    <div class="row">
       <div class="col-12">
         <br />
         <p class="title1">Comentarios</p>
       </div>
-      <div class="col-12">
-        <div class="row">
-          <div class="col-3" style="padding-left: 250px">
-            <div class="card">
-              <img
-                loading="lazy"
-                [src]="Usuario1"
-                alt=""
-                width="250px"
-                height="150px"
-                style="border-radius: 10px; z-index: 1"
-              />
-              <br />
-              <h2>Mario Alfonso</h2>
-              <p class="textoComentarios">
-                Excelentes ejercicios adaptados a mi fisico
-              </p>
-            </div>
+      <div class="container">
+        <div class="col-3" id="cardsUsers">
+          <div class="card">
+            <img
+              loading="lazy"
+              class="imgComentarios"
+              [src]="Usuario1"
+              alt=""
+            />
+            <br />
+            <h2>Mario Alfonso</h2>
+            <p class="textoComentarios">
+              Excelentes ejercicios adaptados a mi fisico
+            </p>
           </div>
-          <div class="col-3" style="padding-left: 250px">
-            <div class="card">
-              <img
-                loading="lazy"
-                [src]="Usuario2"
-                alt=""
-                width="250px"
-                height="150px"
-                style="border-radius: 10px; z-index: 1"
-              />
-              <br />
-              <h2>Sara Contreras</h2>
-              <p class="textoComentarios">
-                Excelentes rutinas e indicaciones para cada ejercicio
-              </p>
-            </div>
+        </div>
+        <br>
+        <div class="col-3" id="cardsUsers">
+          <div class="card">
+            <img
+              loading="lazy"
+              class="imgComentarios"
+              [src]="Usuario2"
+              alt=""
+            />
+            <br />
+            <h2>Sara Contreras</h2>
+            <p class="textoComentarios">
+              Excelentes rutinas e indicaciones para cada ejercicio
+            </p>
           </div>
-          <div class="col-3" style="padding-left: 250px">
-            <div class="card">
-              <img
-                loading="lazy"
-                [src]="Usuario3"
-                alt=""
-                width="250px"
-                height="150px"
-                style="border-radius: 10px; z-index: 1"
-              />
-              <br />
-              <h2>Oscar Martines</h2>
-              <p class="textoComentarios">
-                Excelente servicio, con buenas rutinas y facil de hacer
-              </p>
-            </div>
+        </div>
+        <br>
+        <div class="col-3" id="cardsUsers">
+          <div class="card">
+            <img
+              loading="lazy"
+              class="imgComentarios"
+              [src]="Usuario3"
+              alt=""
+            />
+            <br />
+            <h2>Oscar Martines</h2>
+            <p class="textoComentarios">
+              Excelente servicio, con buenas rutinas y facil de hacer
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <br /><br /><br />
-</div>
-<!-- Footer -->
-<div class="footter">
-  <footer class="pie-pagina">
-    <div class="grupo-1">
-      <div class="box">
-        <figure>
-          <a href="#">
-            <img loading="lazy" [src]="logo" alt="Logo de SLee Dw" />
-          </a>
-        </figure>
-      </div>
-      <div class="box" id="about">
-        <h2 style="font-size: 30px">SOBRE NOSOTROS</h2>
-        <p style="font-size: 20px">
-          No tienes tiempo? no te preocupes Rulas Rutine es una pagina
-          dedicada a brindar servicios de ejercicios desde tu casa
-        </p>
-        <p style="font-size: 20px">
-          Rulas Rutine tiene ejercicios dedicados a cualquier tipo de cuerpo
-          para que puedas entrenar sin lastimarte.
+<br /><br /><br />
+
+
+<app-footer></app-footer>
+
+
+<!-- <div class="col-12">
+  <div class="row">
+    <div class="col-3" id="cardsUsers">
+      <div class="card">
+        <img
+          loading="lazy"
+          class="imgComentarios"
+          [src]="Usuario1"
+          alt=""
+        />
+        <br />
+        <h2>Mario Alfonso</h2>
+        <p class="textoComentarios">
+          Excelentes ejercicios adaptados a mi fisico
         </p>
       </div>
-      <div class="box">
-        <h2>SIGUENOS</h2>
-        <div class="red-social">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-youtube"></a>
-        </div>
+    </div>
+    <div class="col-3" id="cardsUsers">
+      <div class="card">
+        <img
+          loading="lazy"
+          class="imgComentarios"
+          [src]="Usuario2"
+          alt=""
+        />
+        <br />
+        <h2>Sara Contreras</h2>
+        <p class="textoComentarios">
+          Excelentes rutinas e indicaciones para cada ejercicio
+        </p>
       </div>
     </div>
-    <div class="grupo-2">
-      <small
-        >&copy; 2022 <b>Rulas Rutine</b> - Todos los Derechos
-        Reservados.</small
-      >
+    <div class="col-3" id="cardsUsers">
+      <div class="card">
+        <img
+          loading="lazy"
+          class="imgComentarios"
+          [src]="Usuario3"
+          alt=""
+        />
+        <br />
+        <h2>Oscar Martines</h2>
+        <p class="textoComentarios">
+          Excelente servicio, con buenas rutinas y facil de hacer
+        </p>
+      </div>
     </div>
-  </footer>
-</div>
+  </div>
+</div> -->
