@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class AltaEntrenadoresComponent implements OnInit {
 
   constructor() { }
+  /**
+   * Imagenes y Variables
+   */
+
+  user: string = "assets/Imagenes/usuario.png";
 
   ngOnInit(): void {
   }
