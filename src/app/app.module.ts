@@ -11,8 +11,9 @@ import { UserProfileComponent } from './Componentes/user-profile/user-profile.co
 import { RutineResumeComponent } from './Componentes/rutine-resume/rutine-resume.component';
 import { RutineComponent } from './Componentes/rutine/rutine.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { MakeRutineComponent } from './Componentes/make-rutine/make-rutine.component';
+// import { MyInterceptor } from './interceptors/myinterceptor';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { MakeRutineComponent } from './Componentes/make-rutine/make-rutine.compo
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    // { provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

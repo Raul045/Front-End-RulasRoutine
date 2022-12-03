@@ -9,6 +9,7 @@ export class NavbarComponent {
 
   constructor(private router: Router) { }
 
+  username = "Ubaldo";
   title = 'RulasRutine';
   logo: string = "assets/Imagenes/logo.png";
   menu: string = "assets/Imagenes/menu.png";

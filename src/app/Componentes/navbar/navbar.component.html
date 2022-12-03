@@ -51,9 +51,14 @@
           <a class="nav-link" href="#">Comentarios</a>
         </li>
         <li class="navbar-brand">
-          <a class="nav-link" href="/login" (click)="goToLogin()">Iniciar Sesion</a>
+          <a class="nav-link" routerLink="/login">Cerrar Sesion</a>
+        </li>
+        <li class="navbar-brand">
+          <a class="nav-link">Bienvenido {{username}}</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+

@@ -6,27 +6,39 @@
           <img [src]="logo" width="120" alt="">
         </div>
         <div class="card-body">
-          <form action="">
+          <form action=""
+          autocomplete="off"
+          [formGroup]="LoginForm"
+          (ngSubmit)="login()">
             <div class="row align-items-center">
               <div class="col-sm-12">
-                <span>Correo</span>
-                <input type="email" name="" id="" class="form-control">
+                <span>Correcto</span>
+                <input type="email"
+                id="inputEmail"
+                placeholder="Ingresa tu contraseña"
+                formControlName="email"
+                [class.is-invalid]="emailValidate"
+                  class="form-control">
               </div>
               <div class="col-sm-12">
                 <span>Contraseña</span>
-                <input type="password" name="" id="" class="form-control">
+                <input type="password"  id="inputPassword"
+                placeholder="Ingresa tu contraseña"
+                formControlName="password"
+                [class.is-invalid]="passwordValidate"
+                 class="form-control">
               </div>
             </div>
             <div class="row text-center mt-3">
               <div class="col-sm">
-                <button class="btn">Iniciar Sesión</button>
+                <button type="submit" class="btn">Iniciar Sesión</button>
               </div>
             </div>
             <div class="row text-center mt-3">
               <div class="col-sm">
                 <span>¿No tienes cuenta?</span>
                 <div>
-                  <a href="/registro">Registrate</a>
+                  <a routerLink="/registro">Registrate</a>
                 </div>
               </div>
             </div>

@@ -7,3 +7,8 @@ export interface  Users {
 }
 
 
+export interface Users2 {
+  email: string;
+  password: string;
+}
+
