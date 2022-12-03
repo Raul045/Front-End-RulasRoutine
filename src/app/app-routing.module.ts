@@ -8,8 +8,13 @@ import { RutineResumeComponent } from './Componentes/rutine-resume/rutine-resume
 import { RegistrarPesoComponent } from './Componentes/registrar-peso/registrar-peso.component';
 import { TableUsuariosComponent } from './Componentes/table-usuarios/table-usuarios.component';
 import { TableEjerciciosComponent } from './Componentes/table-ejercicios/table-ejercicios.component';
+import { AltaEntrenadoresComponent } from './Componentes/alta-entrenadores/alta-entrenadores.component';
 
 const routes: Routes = [
+  {
+    path: 'alta-coach',
+    component: AltaEntrenadoresComponent
+  },
   {
     path: 'ejercicios',
     component: TableEjerciciosComponent
