@@ -10,8 +10,23 @@ import { TableUsuariosComponent } from './Componentes/table-usuarios/table-usuar
 import { TableEjerciciosComponent } from './Componentes/table-ejercicios/table-ejercicios.component';
 import { RutineEjerciciosComponent } from './Componentes/rutine-ejercicios/rutine-ejercicios.component';
 import { AltaEntrenadoresComponent } from './Componentes/alta-entrenadores/alta-entrenadores.component';
+import { AltaEjercicioComponent } from './Componentes/alta-ejercicio/alta-ejercicio.component';
+import { MakeRutineEComponent } from './Componentes/make-rutine-e/make-rutine-e.component';
+import { HistorialComponent } from './Componentes/historial/historial.component';
 
 const routes: Routes = [
+  {
+    path: 'historial-peso',
+    component: HistorialComponent
+  },
+  {
+    path: 'crear-rutina-entrenador',
+    component: MakeRutineEComponent
+  },
+  {
+    path: 'alta-ejercicio',
+    component: AltaEjercicioComponent
+  },
   {
     path: 'alta-coach',
     component: AltaEntrenadoresComponent
