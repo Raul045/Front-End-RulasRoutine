@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import {NgxPaginationModule} from 'ngx-pagination';
@@ -28,6 +28,7 @@ import { FelicidadesComponent } from './Componentes/felicidades/felicidades.comp
 import { PerfilComponent } from './Componentes/perfil/perfil.component';
 import { EditPerfilComponent } from './Componentes/edit-perfil/edit-perfil.component';
 import { NivelesComponent } from './Componentes/niveles/niveles.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,12 @@ import { NivelesComponent } from './Componentes/niveles/niveles.component';
     FormsModule,
     HttpClientModule,
     NgxPaginationModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
