@@ -63,10 +63,20 @@ export class RutineEjerciciosComponent {
   ]
 
 
+  element: boolean = false;
+
+
   RutinaTerminada (){
     if(this.pageActual == this.ejercicio.length){
-      this.router.navigate(['/felicidades'])
+      this.element = true;
+    }else{
+      this.element = false;
     }
+  }
+
+  goTofelicidades (){
+    this.router.navigate(['/felicidades'])
+    this.element = false;
   }
 
 }

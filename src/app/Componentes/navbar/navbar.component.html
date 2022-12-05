@@ -1,18 +1,42 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg text-center" id="nav-total">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img [src]="logo" width="100px" alt=""></a>
+    <li class="navbar-brand  float-end">
+      <a href="#" onclick="javascipt:return false;"><img [src]="user" class="img-user clearfix" alt="..." (click)="mostrarMenu()"></a>
+      <div *ngIf="mostrar" class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="uer-info">
+            <img [src]="user">
+            <h3>{{username}}</h3>
+          </div>
+          <hr>
+          <a href="/perfil" class="sub-menu-link">
+            <img [src]="perfil" alt="">
+            <p (click)="gotoPerfil()">Editar perfil</p>
+          </a>
+          <a href="/niveles" class="sub-menu-link">
+            <img [src]="exp" alt="">
+            <p (click)="gotoNiveles()">Nivel :{{nivel}}</p>
+          </a>
+          <a href="" class="sub-menu-link">
+            <img [src]="salir" alt="">
+            <p>Salir...</p>
+          </a>
+        </div>
+      </div>
+    </li>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="navbar-brand">
-          <a class="nav-link" href="#exercises">Ejercicios</a>
+          <a class="nav-link" href="#">Ejercicios</a>
         </li>
         <li class="navbar-brand">
           <a class="nav-link" href="#">Sobre Nosotros</a>
         </li>
+        <a class="navbar-brand" href="#"><img [src]="logo" width="100px" alt=""></a>
         <li class="navbar-brand">
           <a class="nav-link" href="#">Comentarios</a>
         </li>

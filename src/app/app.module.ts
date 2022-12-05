@@ -25,6 +25,9 @@ import { AltaEjercicioComponent } from './Componentes/alta-ejercicio/alta-ejerci
 import { MakeRutineEComponent } from './Componentes/make-rutine-e/make-rutine-e.component';
 import { HistorialComponent } from './Componentes/historial/historial.component';
 import { FelicidadesComponent } from './Componentes/felicidades/felicidades.component';
+import { PerfilComponent } from './Componentes/perfil/perfil.component';
+import { EditPerfilComponent } from './Componentes/edit-perfil/edit-perfil.component';
+import { NivelesComponent } from './Componentes/niveles/niveles.component';
 
 @NgModule({
   declarations: [
@@ -47,13 +50,16 @@ import { FelicidadesComponent } from './Componentes/felicidades/felicidades.comp
     MakeRutineEComponent,
     HistorialComponent,
     FelicidadesComponent,
+    PerfilComponent,
+    EditPerfilComponent,
+    NivelesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

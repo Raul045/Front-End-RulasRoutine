@@ -1,0 +1,55 @@
+<div class="container">
+    <app-navbar></app-navbar>
+    <br>
+    <div class="row">
+        <div class="col-12 text-center">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img [src] = "imguser" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{user}}</h5>
+                      <p class="card-text">Tu experiencia: {{exp}} exp</p>
+                      <p class="card-text">Tu nivel: Nuevo</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <br>
+        <div class="col-md text-center">
+            <button class="btn btn-info" (click)="mostrarNiveles()">{{btnTexto}}</button>
+        </div>
+    </div>
+    <br>
+    <div *ngIf="mos" class="row">
+        <div class="col-md text-center" [ngStyle]="{'opacity':'{{bloqueado}}'}">
+            <img [src]="imgNuevo" id="imgBasico" alt="">
+            <p>nivel Nuevo de 1 a 49 exp</p>
+        </div>
+        <div class="col-md text-center" [ngStyle]="{'opacity':'{{bloqueado}}'}">
+            <img [src]="imgNovato" id="imgBasico" alt="">
+            <p>nivel Novato de 50 a 99 exp</p>
+        </div>
+        <div class="col-md text-center" [ngStyle]="{'opacity':'{{bloqueado}}'}">
+            <img [src]="imgPrincipiante" id="imgBasico" alt="">
+            <p>nivel Nuevo de 100 a 149 exp</p>
+        </div>
+        <div class="col-md text-center" [ngStyle]="{'opacity':'{{bloqueado}}'}">
+            <img [src]="imgAvanzado" id="imgBasico" alt="">
+            <p>nivel Nuevo de 150 a 199 exp</p>
+        </div>
+        <div class="col-md text-center" [ngStyle]="{'opacity':'{{bloqueado}}'}">
+            <img [src]="imgExperto" id="imgBasico" alt="">
+            <p>nivel Nuevo de 200 a 249 exp</p>
+        </div>
+        <div class="col-md text-center" [ngStyle]="{'opacity':'{{bloqueado}}'}">
+            <img [src]="imgMaximus" id="imgBasico" alt="">
+            <p>nivel Nuevo de 250 a 99999 exp</p>
+        </div>
+    </div>
+</div>
+<br>
+<app-footer></app-footer>
