@@ -4,3 +4,10 @@
   font-family: 'Bebas Neue';
   width: auto;
 }
+
+@media (max-width: 500px) {
+  pagination-controls {
+    font-size: 20px;
+
+  }
+}

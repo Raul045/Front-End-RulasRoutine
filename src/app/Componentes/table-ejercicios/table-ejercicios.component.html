@@ -4,7 +4,7 @@
     <h3 class="text-light">
       Ejercicios
     </h3>
-    <div class="table-responsive">
+    <div class="table-responsive text-center">
       <table class="table text-light">
         <thead class="text-center">
           <tr>
@@ -15,7 +15,7 @@
           </tr>
         </thead>
         <tbody class="text-center">
-          <tr *ngFor="let ejercicio of ejercicios">
+          <tr *ngFor="let ejercicio of ejercicios | paginate: { itemsPerPage: 5, currentPage: page}">
             <th scope="row">{{ejercicio.id}}</th>
             <td>{{ejercicio.nombre}}</td>
             <td>{{ejercicio.description}}</td>
@@ -27,6 +27,7 @@
           </tr>
         </tbody>
       </table>
+      <pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguente"></pagination-controls>
     </div>
   </div>
 </div>

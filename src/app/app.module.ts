@@ -21,6 +21,9 @@ import { RegistrarPesoComponent } from './Componentes/registrar-peso/registrar-p
 import { FooterComponent } from './Componentes/footer/footer.component';
 import { RutineEjerciciosComponent } from './Componentes/rutine-ejercicios/rutine-ejercicios.component';
 import { AltaEntrenadoresComponent } from './Componentes/alta-entrenadores/alta-entrenadores.component';
+import { AltaEjercicioComponent } from './Componentes/alta-ejercicio/alta-ejercicio.component';
+import { MakeRutineEComponent } from './Componentes/make-rutine-e/make-rutine-e.component';
+import { HistorialComponent } from './Componentes/historial/historial.component';
 import { FelicidadesComponent } from './Componentes/felicidades/felicidades.component';
 
 @NgModule({
@@ -40,6 +43,9 @@ import { FelicidadesComponent } from './Componentes/felicidades/felicidades.comp
     FooterComponent,
     RutineEjerciciosComponent,
     AltaEntrenadoresComponent,
+    AltaEjercicioComponent,
+    MakeRutineEComponent,
+    HistorialComponent,
     FelicidadesComponent,
   ],
   imports: [
