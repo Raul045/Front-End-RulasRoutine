@@ -1,223 +1,205 @@
-
 <app-navbar></app-navbar>
-  <!-- Imagenes que se pone en el foro como relleno -->
-  <div class="imagenes">
-    <img
-      loading="lazy"
-      [src]="Relleno2"
-      alt=""
-      width="100%"
-      style="opacity: 90%; border-radius: 8px"
-    />
-  </div>
-  <br />
-  <br />
-  <!-- Sobre nosotros -->
-  <div class="About1" id="SobreNosotros">
-    <div class="row align-items-start">
-      <div class="t1 col-5">
-        <p class="title1">Sobre nosotros</p>
-        <p class="texto1">
-          Somos una empresa dedicada al cuidado de la salud fisica. provomeos el
-          modelo de entrenamiento desde casa, brindandole al usuario una rutina
-          y ejercisos dedicados a mejorar su estado fisico mientras este no hace
-          un sobre esfuerzo que lo lastime.
-        </p>
-        <br />
-        <div class="d-flex redes col-12">
-          <div class="col-md-3 icon-social">
-            <img class="img-social" id="imgRedes" [src]="facebook" alt="" />
-          </div>
-          <div class="col-md-3 icon-social">
-            <img class="img-social" id="imgRedes" [src]="youtube" alt="" />
-          </div>
-          <div class="col-md-3 icon-social">
-            <img class="img-social" id="imgRedes" [src]="Twiter" alt="" />
-          </div>
-          <div class="col-md-3 icon-social">
-            <img class="img-social" id="imgRedes" [src]="instagram" alt="" />
-          </div>
+<!-- Imagenes que se pone en el foro como relleno -->
+<div class="imagenes">
+  <img
+    loading="lazy"
+    [src]="Relleno2"
+    alt=""
+    width="100%"
+    style="opacity: 90%"
+  />
+</div>
+<br />
+<br />
+<!-- Sobre nosotros -->
+<div class="About1" id="SobreNosotros">
+  <div class="row align-items-start">
+    <div class="t1 col-5">
+      <p class="title1">Sobre nosotros</p>
+      <p class="texto1">
+        Somos una empresa dedicada al cuidado de la salud fisica. provomeos el
+        modelo de entrenamiento desde casa, brindandole al usuario una rutina y
+        ejercisos dedicados a mejorar su estado fisico mientras este no hace un
+        sobre esfuerzo que lo lastime.
+      </p>
+      <br />
+      <div class="d-flex redes col-12">
+        <div class="col-md-3 icon-social">
+          <img class="img-social" id="imgRedes" [src]="facebook" alt="" />
         </div>
-      </div>
-      <div class="t2 col-7">
-        <p></p>
-        <img
-          loading="lazy"
-          [src]="Ejercicios"
-          width="450px"
-          id="imageAbout"
-          alt=""
-          align="right"
-        />
-      </div>
-    </div>
-  </div>
-  <br />
-  <!-- Imagenes que se pone en el foro como relleno -->
-  <div class="imagenes">
-    <img loading="lazy" [src]="Estirando" alt="" width="100%" height="350px" style="border-radius: 10px;"/>
-  </div>
-  <br />
-  <br />
-  <!-- Apartado de ejercicios del foro -->
-  <div class="Ejercicios" id="exercises">
-    <div class="row">
-      <div class="t1 col-5">
-        <p class="title2">Ejercicios</p>
-        <br />
-        <!-- Tipos de ejercicios -->
-        <div class="row">
-          <div class="pt1 col-6">
-            <p class="textnormal">Resistencia</p>
-            <img
-              class="imgEjercicios"
-              loading="lazy"
-              [src]="Resistencia"
-              alt=""
-              width="120px"
-              height="80px"
-            />
-            <br />
-            <br />
-            <p class="textnormal">Equilibrio</p>
-            <img
-              class="imgEjercicios"
-              loading="lazy"
-              [src]="Equilibrio"
-              alt=""
-              width="120px"
-              height="80px"
-            />
-          </div>
-          <div class="pt2 col-6">
-            <p class="textnormal">Fortalecimiento</p>
-            <img
-              class="imgEjercicios"
-              loading="lazy"
-              [src]="Fortalecimiento"
-              alt=""
-              width="120px"
-              height="80px"
-              align="center"
-            />
-            <br /><br />
-            <p class="textnormal">Flexbilidad</p>
-            <img
-              class="imgEjercicios"
-              loading="lazy"
-              [src]="Flexibilidad"
-              alt=""
-              width="120px"
-              height="80px"
-            />
-          </div>
+        <div class="col-md-3 icon-social">
+          <img class="img-social" id="imgRedes" [src]="youtube" alt="" />
         </div>
-      </div>
-      <!-- Descripcion de ejercicios -->
-      <div class="t3 col-7">
-        <br />
-        <br />
-        <br />
-        <br />
-        <div class="row">
-          <div class="col-12">
-            <p class="textnormal">
-              Los ejercicos que nosotros ofrecemos son ejercicios dedicados a tu
-              persona, en poder cuidar tu salud adaptando los ejercicios
-              dependiendo de tus necesidades y tu estado actual de peso.
-            </p>
-          </div>
-          <div class="col-12">
-            <img
-              loading="lazy"
-              class="imgEjercicioD"
-              [src]="DescripcionEjercicio"
-              alt=""
-              width="200px"
-              height="200px"
-              align="right"
-            />
-          </div>
+        <div class="col-md-3 icon-social">
+          <img class="img-social" id="imgRedes" [src]="Twiter" alt="" />
+        </div>
+        <div class="col-md-3 icon-social">
+          <img class="img-social" id="imgRedes" [src]="instagram" alt="" />
         </div>
       </div>
     </div>
+    <div class="t2 col-7">
+      <p></p>
+      <img
+        loading="lazy"
+        [src]="Ejercicios"
+        width="450px"
+        id="imageAbout"
+        alt=""
+        align="right"
+      />
+    </div>
   </div>
-  <br /><br />
-  <!-- Imagenes que se pone en el foro como relleno -->
-  <div class="imagenes">
-    <img
-      loading="lazy"
-      [src]="Relleno1"
-      alt=""
-      width="100%"
-      height="500px"
-      style="opacity: 90%; border-radius: 10px"
-    />
-  </div>
-  <br /><br /><br />
-  <!-- Apartado de Comentarios -->
-  <div class="Comentarios" id="comments">
-    <div class="row">
-      <div class="col-12">
-        <br />
-        <p class="title1">Comentarios</p>
+</div>
+<br />
+<!-- Imagenes que se pone en el foro como relleno -->
+<div class="imagenes">
+  <img loading="lazy" [src]="Estirando" alt="" width="100%" height="350px" />
+</div>
+<br />
+<br />
+<!-- Apartado de ejercicios del foro -->
+<div class="Ejercicios" id="exercises">
+  <div class="row">
+    <div class="t1 col-5">
+      <p class="title2">Ejercicios</p>
+      <br />
+      <!-- Tipos de ejercicios -->
+      <div class="row">
+        <div class="pt1 col-6">
+          <p class="textnormal">Resistencia</p>
+          <img
+            class="imgEjercicios"
+            loading="lazy"
+            [src]="Resistencia"
+            alt=""
+            width="120px"
+            height="80px"
+          />
+          <br />
+          <br />
+          <p class="textnormal">Equilibrio</p>
+          <img
+            class="imgEjercicios"
+            loading="lazy"
+            [src]="Equilibrio"
+            alt=""
+            width="120px"
+            height="80px"
+          />
+        </div>
+        <div class="pt2 col-6">
+          <p class="textnormal">Fortalecimiento</p>
+          <img
+            class="imgEjercicios"
+            loading="lazy"
+            [src]="Fortalecimiento"
+            alt=""
+            width="120px"
+            height="80px"
+            align="center"
+          />
+          <br /><br />
+          <p class="textnormal">Flexbilidad</p>
+          <img
+            class="imgEjercicios"
+            loading="lazy"
+            [src]="Flexibilidad"
+            alt=""
+            width="120px"
+            height="80px"
+          />
+        </div>
       </div>
-      <div class="container">
-        <div class="col-3" id="cardsUsers">
-          <div class="card">
-            <img
-              loading="lazy"
-              class="imgComentarios"
-              [src]="Usuario1"
-              alt=""
-            />
-            <br />
-            <h2>Mario Alfonso</h2>
-            <p class="textoComentarios">
-              Excelentes ejercicios adaptados a mi fisico
-            </p>
-          </div>
+    </div>
+    <!-- Descripcion de ejercicios -->
+    <div class="t3 col-7">
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-12">
+          <p class="textnormal">
+            Los ejercicos que nosotros ofrecemos son ejercicios dedicados a tu
+            persona, en poder cuidar tu salud adaptando los ejercicios
+            dependiendo de tus necesidades y tu estado actual de peso.
+          </p>
         </div>
-        <br>
-        <div class="col-3" id="cardsUsers">
-          <div class="card">
-            <img
-              loading="lazy"
-              class="imgComentarios"
-              [src]="Usuario2"
-              alt=""
-            />
-            <br />
-            <h2>Sara Contreras</h2>
-            <p class="textoComentarios">
-              Excelentes rutinas e indicaciones para cada ejercicio
-            </p>
-          </div>
-        </div>
-        <br>
-        <div class="col-3" id="cardsUsers">
-          <div class="card">
-            <img
-              loading="lazy"
-              class="imgComentarios"
-              [src]="Usuario3"
-              alt=""
-            />
-            <br />
-            <h2>Oscar Martines</h2>
-            <p class="textoComentarios">
-              Excelente servicio, con buenas rutinas y facil de hacer
-            </p>
-          </div>
+        <div class="col-12">
+          <img
+            loading="lazy"
+            class="imgEjercicioD"
+            [src]="DescripcionEjercicio"
+            alt=""
+            width="200px"
+            height="200px"
+            align="right"
+          />
         </div>
       </div>
     </div>
   </div>
+</div>
+<br /><br />
+<!-- Imagenes que se pone en el foro como relleno -->
+<div class="imagenes">
+  <img
+    loading="lazy"
+    [src]="Relleno1"
+    alt=""
+    width="100%"
+    height="500px"
+    style="opacity: 90%; border-radius: 10px"
+  />
+</div>
+<br /><br /><br />
+<!-- Apartado de Comentarios -->
+<div class="Comentarios" id="comments">
+  <div class="row">
+    <div class="col-12">
+      <br />
+      <p class="title1">Comentarios</p>
+    </div>
+    <div class="container">
+      <div class="col-3" id="cardsUsers">
+        <div class="card">
+          <img loading="lazy" class="imgComentarios" [src]="Usuario1" alt="" />
+          <br />
+          <h2>Mario Alfonso</h2>
+          <p class="textoComentarios">
+            Excelentes ejercicios adaptados a mi fisico
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="col-3" id="cardsUsers">
+        <div class="card">
+          <img loading="lazy" class="imgComentarios" [src]="Usuario2" alt="" />
+          <br />
+          <h2>Sara Contreras</h2>
+          <p class="textoComentarios">
+            Excelentes rutinas e indicaciones para cada ejercicio
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="col-3" id="cardsUsers">
+        <div class="card">
+          <img loading="lazy" class="imgComentarios" [src]="Usuario3" alt="" />
+          <br />
+          <h2>Oscar Martines</h2>
+          <p class="textoComentarios">
+            Excelente servicio, con buenas rutinas y facil de hacer
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <br /><br /><br />
 
-
 <app-footer></app-footer>
-
 
 <!-- <div class="col-12">
   <div class="row">

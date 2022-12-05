@@ -221,6 +221,13 @@ a:hover {
   border-radius: 8px;
   padding-left: 15px;
 }
+.icon-social{
+  cursor: pointer;
+  transition: 300ms;
+}
+.icon-social:hover{
+  transform: scale(1.1);
+}
 
 
 
