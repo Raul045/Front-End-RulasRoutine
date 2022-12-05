@@ -8,15 +8,13 @@ import { Router } from '@angular/router';
 })
 export class PerfilComponent{
 
-  username: string = "Raul"
-  lastname: string = "De los santos"
+  username: string = "Oscar"
+  lastname: string = "Martines"
   age: string = "20"
-  email: string = "anguianoraul@gmail.com"
+  email: string = "oscar@gmail.com"
 
   imgPerfil: string = "assets/Imagenes/Usuario-navbar.png"
-
-
-  pesoAlInicio: string = "80kg";
+  
   pesoActual: string = "60kg";
 
 

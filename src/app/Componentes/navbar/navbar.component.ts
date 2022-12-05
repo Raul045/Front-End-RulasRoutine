@@ -9,8 +9,14 @@ export class NavbarComponent {
 
   constructor(private router: Router) { }
 
-  username: string = "Raul"
+  username: string = "Oscar"
   nivel: string = "Nuevo"
+
+  userN: boolean = true;
+  admin: boolean = false;
+
+  logueado:boolean = true;
+  sinSesion:boolean = false; 
 
   title = 'RulasRutine';
   logo: string = "assets/Imagenes/logo.png";
@@ -18,6 +24,9 @@ export class NavbarComponent {
   perfil: string = "assets/Imagenes/perfil.png"
   salir: string = "assets/Imagenes/salir.png"
   exp: string = "assets/Imagenes/nivel.png"
+  RutinasAdmin: string = "assets/Imagenes/RutinasAdmin.png"
+  EntrenadorAdmin: string = "assets/Imagenes/EntrenadoresAdmin.png"
+  EjercicioAdmin: string = "assets/Imagenes/EjercicioAdmin.png"
 
   contador: number = 0;
 
@@ -31,6 +40,16 @@ export class NavbarComponent {
 
   gotoNiveles(){
     this.router.navigate(['/niveles'])
+  }
+
+  gotoUsers(){
+    this.router.navigate(['/usuarios'])
+  }
+  gotoEjercicios(){
+    this.router.navigate(['/ejercicios'])
+  }
+  gotoMakeRutina(){
+    this.router.navigate(['/crear-rutina-entrenador'])
   }
 
   isShowDivIf = true;

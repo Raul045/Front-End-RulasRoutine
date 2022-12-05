@@ -21,8 +21,9 @@ export class NivelesComponent implements OnInit {
   btnTexto: string = "¿Que niveles existen?"
   mos:boolean = false;
   //variables normales
-  user: string = "Raul"  
+  user: string = "Oscar"  
   exp: string = "25";
+  info: string = "";
 
   mostrarNiveles(){
     if(this.btnTexto == "¿Que niveles existen?"){
@@ -31,6 +32,27 @@ export class NivelesComponent implements OnInit {
     }else{
       this.btnTexto = "¿Que niveles existen?";
       this.mos = false;
+    }
+  }
+
+  infoNiveles(nivel: string){
+    if(nivel == "Nuevo"){
+      this.info = "este nivel es el de nuevo"
+    }
+    else if(nivel == "Novato"){
+      this.info = "este nivel es el de Novato"
+    }
+    else if(nivel == "Principiante"){
+      this.info = "este nivel es el de Principiante"
+    }
+    else if(nivel == "Avanzado"){
+      this.info = "este nivel es el de Avanzado"
+    }
+    else if(nivel == "Experto"){
+      this.info = "este nivel es el de Experto"
+    }
+    else if(nivel == "Maximus"){
+      this.info = "este nivel es el de Maximum"
     }
   }
 

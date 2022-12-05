@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-table-usuarios',
   templateUrl: './table-usuarios.component.html',
   styleUrls: ['./table-usuarios.component.css']
 })
-export class TableUsuariosComponent implements OnInit {
+export class TableUsuariosComponent {
 
-  constructor() { }
+  constructor(private route: Router) { }
+
+  goToAddUsers(){
+    this.route.navigate(['/alta-coach'])
+  }
 
   usuarios: any[] = [
     {
