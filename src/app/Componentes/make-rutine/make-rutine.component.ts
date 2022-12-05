@@ -13,7 +13,8 @@ export class MakeRutineComponent implements OnInit {
    * Imagenes
    */
 
-  cuerpo: string = "assets/Imagenes/Equilibrio.png";
+  cuerpo: string = "assets/Imagenes/cuerpo.png";
+  tipo: string = "assets/Imagenes/Tipo.png"
 
   ngOnInit(): void {
   }

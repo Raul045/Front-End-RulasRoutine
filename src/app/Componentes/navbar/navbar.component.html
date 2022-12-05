@@ -1,7 +1,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg text-center" id="nav-total">
   <div class="container-fluid">
-    <li class="navbar-brand  float-end">
+    <li *ngIf="logueado" class="navbar-brand  float-end">
       <a href="#" onclick="javascipt:return false;"><img [src]="user" class="img-user clearfix" alt="..." (click)="mostrarMenu()"></a>
       <div *ngIf="mostrar" class="sub-menu-wrap" id="subMenu">
         <div class="sub-menu">
@@ -10,13 +10,31 @@
             <h3>{{username}}</h3>
           </div>
           <hr>
-          <a href="/perfil" class="sub-menu-link">
+          <!-- Usuario normal -->
+          <a *ngIf="userN" href="/perfil" class="sub-menu-link">
             <img [src]="perfil" alt="">
             <p (click)="gotoPerfil()">Editar perfil</p>
           </a>
-          <a href="/niveles" class="sub-menu-link">
+          <a *ngIf="userN" href="/niveles" class="sub-menu-link">
             <img [src]="exp" alt="">
             <p (click)="gotoNiveles()">Nivel :{{nivel}}</p>
+          </a>
+          <!-- Administrador | Entrenador -->
+          <a *ngIf="admin" href="/perfil" class="sub-menu-link">
+            <img [src]="perfil" alt="">
+            <p (click)="gotoPerfil()">Editar perfil</p>
+          </a>
+          <a *ngIf="admin" href="/usuarios" class="sub-menu-link">
+            <img [src]="EntrenadorAdmin" alt="">
+            <p (click)="gotoUsers()">Usuarios</p>
+          </a>
+          <a *ngIf="admin" href="/ejercicios" class="sub-menu-link">
+            <img [src]="EjercicioAdmin" alt="">
+            <p (click)="gotoEjercicios()">Ejercicios</p>
+          </a>
+          <a *ngIf="admin" href="/crear-rutina-entrenador" class="sub-menu-link">
+            <img [src]="RutinasAdmin" alt="">
+            <p (click)="gotoMakeRutina()">Rutinas</p>
           </a>
           <a href="" class="sub-menu-link">
             <img [src]="salir" alt="">
@@ -30,17 +48,23 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="navbar-brand">
+        <li *ngIf="logueado" class="navbar-brand">
+          <a class="nav-link" href="#">Rutina</a>
+        </li>
+        <li *ngIf="sinSesion" class="navbar-brand">
           <a class="nav-link" href="#">Ejercicios</a>
         </li>
-        <li class="navbar-brand">
+        <li *ngIf="sinSesion" class="navbar-brand">
           <a class="nav-link" href="#">Sobre Nosotros</a>
         </li>
         <a class="navbar-brand" href="#"><img [src]="logo" width="100px" alt=""></a>
-        <li class="navbar-brand">
+        <li *ngIf="logueado" class="navbar-brand">
+          <a class="nav-link" href="#">Historial</a>
+        </li>
+        <li *ngIf="sinSesion" class="navbar-brand">
           <a class="nav-link" href="#">Comentarios</a>
         </li>
-        <li class="navbar-brand">
+        <li *ngIf="sinSesion" class="navbar-brand">
           <a class="nav-link" href="/login" (click)="goToLogin()">Iniciar Sesion</a>
         </li>
       </ul>

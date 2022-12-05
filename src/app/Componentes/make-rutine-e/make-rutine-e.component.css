@@ -19,6 +19,8 @@ span {
 
 a {
   font-size: 18px;
+  text-decoration: none;
+  color: #3C4048;
 }
 
 .card {

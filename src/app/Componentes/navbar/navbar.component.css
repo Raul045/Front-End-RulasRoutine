@@ -40,7 +40,7 @@ li{
   top: 100%;
   right: 70%;
   width: 320px;
-  max-height: 300px;
+  max-height: 500px;
   overflow: hidden;
   transition: max-height 0.5s;
 }
