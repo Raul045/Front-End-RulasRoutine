@@ -1,0 +1,63 @@
+<div class="container">
+  <app-navbar></app-navbar>
+  <div class="title bg-white text-end mb-5">
+    <h5 id="titulo">Rutina</h5>
+  </div>
+  <div class="row mt-4 mb-5 justify-content-center">
+    <div class="col-lg-6 col-12">
+      <div class="card">
+        <div class="card-body text-center">
+          <div class="text-center" style="margin-top: -85px;">
+            <img [src]="ejercicio_entrenador" width="120" alt="">
+          </div>
+          <form action="">
+            <div class="row align-items-* mt-2">
+              <div class="col-sm">
+                <select class="select">
+                  <option value="" selected>Ejercicio</option>
+                  <option value="">Pierna</option>
+                  <option value="">Brazo</option>
+                  <option value="">Espalda</option>
+                </select>
+              </div>
+            </div>
+            <div class="row align-items-* mt-4">
+              <div class="col-sm">
+                <h5 id="text">¿No Aparece tu ejercicio?</h5>
+              </div>
+            </div>
+            <div class="row align-items-* mt-3">
+              <div class="col-sm">
+                <select class="select">
+                  <option value="" selected>Cuerpo</option>
+                  <option value="">Pierna</option>
+                  <option value="">Brazo</option>
+                  <option value="">Espalda</option>
+                </select>
+              </div>
+            </div>
+            <div class="row align-items-* mt-3">
+              <div class="col-sm-12">
+                <select class="select">
+                  <option value="" selected>Tipo</option>
+                  <option value="">Pierna</option>
+                  <option value="">Brazo</option>
+                  <option value="">Espalda</option>
+                </select>
+              </div>
+            </div>
+            <div class="row text-center mt-3">
+              <div class="col-sm mt-2">
+                <button class="btn btn-danger">Cancelar</button>
+              </div>
+              <div class="col-sm mt-2">
+                <button class="btn" id="btn">Terminar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
