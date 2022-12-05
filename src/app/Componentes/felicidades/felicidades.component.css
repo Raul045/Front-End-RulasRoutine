@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.container {
+  align-items: center;
+  font-family: 'Bebas Neue';
+}
+
+.btn{
+    font-size: 30px;
+    height: 60px;
+    border: solid #00ABB3;
+    color: #3C4048;
+    width: 200px;
+}
+.btn:hover{
+    background-color: #00ABB3;
+    color: #eaeaea;
+}

@@ -13,6 +13,7 @@ import { AltaEntrenadoresComponent } from './Componentes/alta-entrenadores/alta-
 import { AltaEjercicioComponent } from './Componentes/alta-ejercicio/alta-ejercicio.component';
 import { MakeRutineEComponent } from './Componentes/make-rutine-e/make-rutine-e.component';
 import { HistorialComponent } from './Componentes/historial/historial.component';
+import { FelicidadesComponent } from './Componentes/felicidades/felicidades.component';
 
 const routes: Routes = [
   {
@@ -50,6 +51,10 @@ const routes: Routes = [
   {
     path: 'ejercicios-rutina',
     component: RutineEjerciciosComponent
+  },
+  {
+    path: 'felicidades',
+    component: FelicidadesComponent
   },
   {
     path: 'blog',
