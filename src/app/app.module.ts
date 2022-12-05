@@ -22,6 +22,9 @@ import { FooterComponent } from './Componentes/footer/footer.component';
 import { RutineEjerciciosComponent } from './Componentes/rutine-ejercicios/rutine-ejercicios.component';
 import { AltaEntrenadoresComponent } from './Componentes/alta-entrenadores/alta-entrenadores.component';
 import { FelicidadesComponent } from './Componentes/felicidades/felicidades.component';
+import { PerfilComponent } from './Componentes/perfil/perfil.component';
+import { EditPerfilComponent } from './Componentes/edit-perfil/edit-perfil.component';
+import { NivelesComponent } from './Componentes/niveles/niveles.component';
 
 @NgModule({
   declarations: [
@@ -41,13 +44,16 @@ import { FelicidadesComponent } from './Componentes/felicidades/felicidades.comp
     RutineEjerciciosComponent,
     AltaEntrenadoresComponent,
     FelicidadesComponent,
+    PerfilComponent,
+    EditPerfilComponent,
+    NivelesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

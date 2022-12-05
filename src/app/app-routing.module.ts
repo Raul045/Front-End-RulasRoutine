@@ -11,6 +11,9 @@ import { TableEjerciciosComponent } from './Componentes/table-ejercicios/table-e
 import { RutineEjerciciosComponent } from './Componentes/rutine-ejercicios/rutine-ejercicios.component';
 import { AltaEntrenadoresComponent } from './Componentes/alta-entrenadores/alta-entrenadores.component';
 import { FelicidadesComponent } from './Componentes/felicidades/felicidades.component';
+import { PerfilComponent } from './Componentes/perfil/perfil.component';
+import { EditPerfilComponent } from './Componentes/edit-perfil/edit-perfil.component';
+import { NivelesComponent } from './Componentes/niveles/niveles.component';
 
 const routes: Routes = [
   {
@@ -24,6 +27,18 @@ const routes: Routes = [
   {
     path: 'usuarios',
     component: TableUsuariosComponent
+  },
+  {
+    path: 'perfil',
+    component: PerfilComponent
+  },
+  {
+    path: 'editar-perfil',
+    component: EditPerfilComponent
+  },
+  {
+    path: 'niveles',
+    component: NivelesComponent
   },
   {
     path: 'crear-rutina',
