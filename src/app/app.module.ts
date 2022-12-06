@@ -12,7 +12,7 @@ import { RegisterComponent } from './Componentes/register/register.component';
 import { UserProfileComponent } from './Componentes/user-profile/user-profile.component';
 import { RutineResumeComponent } from './Componentes/rutine-resume/rutine-resume.component';
 import { RutineComponent } from './Componentes/rutine/rutine.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MakeRutineComponent } from './Componentes/make-rutine/make-rutine.component';
 import { TableUsuariosComponent } from './Componentes/table-usuarios/table-usuarios.component';
@@ -52,6 +52,7 @@ import { FelicidadesComponent } from './Componentes/felicidades/felicidades.comp
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     NgxPaginationModule
   ],

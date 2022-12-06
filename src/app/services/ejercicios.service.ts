@@ -9,7 +9,7 @@ import { Ejercicios } from '../Models/ejercicios';
 })
 export class EjerciciosService {
 
-  private URL_API = environment.apiURL+"/ejercicios"
+  private URL_API = environment.apiURL+"ejercicios"
   private get_all="/get_all"
   private add_exercise="/add_exercise"
   private update_ejercise="/update_ejercise"

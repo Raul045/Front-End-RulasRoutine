@@ -4,36 +4,39 @@
     <h5 id="titulo">Historial</h5>
   </div>
   <div class="row mt-4 mb-5 justify-content-center">
-    <div class="col-lg-10 col-12">
-      <div class="card">
-        <div class="card-body text-center">
-          <div class="row align-items-* mt-2">
-            <div class="col-sm">
-              <h3>Tu peso Inicial:</h3>
+    <form action="" [formGroup]="pesoForm">
+      <div class="col-lg-10 col-12">
+        <div class="card">
+          <div class="card-body text-center">
+            <div class="row align-items-* mt-2">
+              <div class="col-sm">
+                <h3>Tu peso Inicial:</h3>
+              </div>
+              <div class="col-sm">
+                <h3 formControlName="peso">102 <sup>KG</sup></h3>
+                <input type="text" />
+              </div>
             </div>
-            <div class="col-sm">
-              <h3>102 <sup>KG</sup></h3>
+            <div class="row align-items-* mt-4">
+              <div class="col-sm">
+                <h3>Calorias quemadas:</h3>
+              </div>
+              <div class="col-sm">
+                <h3>250 <sup>Cal</sup></h3>
+              </div>
             </div>
-          </div>
-          <div class="row align-items-* mt-4">
-            <div class="col-sm">
-              <h3>Calorias quemadas:</h3>
-            </div>
-            <div class="col-sm">
-              <h3>250 <sup>Cal</sup></h3>
-            </div>
-          </div>
-          <div class="row align-items-start mt-3">
-            <div class="col-sm">
-              <h3>Tu peso actual (Aproximado):</h3>
-            </div>
-            <div class="col-sm">
-              <h3>95 <sup>KG</sup></h3>
+            <div class="row align-items-start mt-3">
+              <div class="col-sm">
+                <h3>Tu peso actual (Aproximado):</h3>
+              </div>
+              <div class="col-sm">
+                <h3>95 <sup>KG</sup></h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </form>
   </div>
 </div>
 <app-footer></app-footer>

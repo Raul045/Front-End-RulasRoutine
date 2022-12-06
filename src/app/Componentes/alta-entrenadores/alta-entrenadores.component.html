@@ -10,21 +10,34 @@
           <div class="text-center" style="margin-top: -85px">
             <img [src]="user" width="120" alt="" />
           </div>
-          <form action="">
+          <form action="" [formGroup]="usersForm">
             <div class="row align-items-*">
               <div class="col-sm">
                 <span>Nombre</span>
-                <input type="text" name="" id="" class="form-control" />
+                <input
+                  type="text"
+                  formControlName="name"
+                  name=""
+                  id=""
+                  class="form-control"
+                />
               </div>
               <div class="col-sm">
                 <span>Apellidos</span>
-                <input type="text" name="" id="" class="form-control" />
+                <input
+                  type="text"
+                  formControlName="lastName"
+                  name=""
+                  id=""
+                  class="form-control"
+                />
               </div>
             </div>
             <div class="row align-items-*">
               <div class="col-sm">
                 <span>Edad</span>
                 <input
+                  formControlName="age"
                   type="number"
                   name=""
                   id=""
@@ -47,12 +60,18 @@
             <div class="row align-items-*">
               <div class="col-sm-12">
                 <span>Correo</span>
-                <input type="email" name="" id="" class="form-control" />
+                <input
+                  type="email"
+                  formControlName="email"
+                  name=""
+                  id=""
+                  class="form-control"
+                />
               </div>
             </div>
             <div class="row text-center mt-3">
               <div class="col-sm">
-                <button class="btn">Registrar</button>
+                <button class="btn" (click)="createUser()">Registrar</button>
               </div>
             </div>
           </form>
