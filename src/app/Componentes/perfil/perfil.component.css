@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.container{
+    font-family: 'Bebas Neue';
+}
+
+.card{
+    width: 100%;
+}
+
+
+
+#perfilImg{
+    width: 150px;
+}
+
+.detalles{
+    border-radius: 10px;
+    width: 100%;
+    background: #3C4048;
+    height: 200px;
+}
+
+.detalles-info{
+    display: grid;
+    color: #eaeaee;
+}
+
+.detalles-info label{
+    color: #00ABB3;
+}
+
+@media (max-width: 500px) {
+
+   
+    .perfilImg{
+        width: 90px;
+    }
+    
+}

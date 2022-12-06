@@ -19,8 +19,6 @@ span {
 
 a {
   font-size: 18px;
-  text-decoration: none;
-  color: #3C4048;
 }
 
 .card {
@@ -32,21 +30,13 @@ a {
   border-radius: 5px;
 }
 
-#btn {
+.btn {
   font-size: 15px;
   height: 40px;
-  background-color: #00ABB3;
   color: #EAEAEA;
   width: 200px;
 }
 
-.btn {
-  font-size: 15px;
-  height: 40px;
-  background-color: #c41616;
-  color: #EAEAEA;
-  width: 200px;
-}
 
 @media (max-width: 500px) {
   #titulo {
@@ -64,19 +54,4 @@ a {
 #titulo {
   margin-right: 50px;
   padding: 5px;
-}
-
-.select,
-option {
-  font-size: 15px;
-  height: 40px;
-  background-color: #00ABB3;
-  color: #EAEAEA;
-  width: 200px;
-  margin-top: 5px;
-  border-radius: 5px;
-}
-
-#text{
-  font-size: 15px;
 }

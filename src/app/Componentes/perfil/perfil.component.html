@@ -1,0 +1,63 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <br>
+    <div class="row" id="card-user">
+        <div class="col-sm">
+            <div class="card">
+                <div class="card-img text-center">
+                    <img [src]="imgPerfil" class="card-img-star" id="perfilImg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{username}}</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">{{lastname}}</li>
+                  <li class="list-group-item">{{age}}</li>
+                  <li class="list-group-item">{{email}}</li>
+                </ul>
+                <div class="card-body text-center">
+                    <button type="button" class="btn btn-info" style="width: 100%;" (click)="goToEditPerfil()">Editar</button>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm">
+            <div class="detalles">
+                <div class="detalles-info text-center">
+                    <br>
+                    <label for="">Peso actual</label>
+                    <p>{{pesoActual}}</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Actualiza tu peso
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+ <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Actulizar peso</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="col-sm">
+                    <span>Peso</span>
+                    <input type="text" name="" id="" class="form-control">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cacelar</button>
+          <button type="button" class="btn btn-success">Actualizar</button>
+        </div>
+      </div>
+    </div>
+</div>
+<br>
+<app-footer></app-footer>

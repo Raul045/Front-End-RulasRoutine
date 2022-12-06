@@ -1,0 +1,77 @@
+<div class="container">
+    <app-navbar></app-navbar>
+    <br>
+    <div class="row">
+        <div class="col-12 text-center">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img [src] = "imguser" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{user}}</h5>
+                      <p class="card-text">Tu experiencia: {{exp}} exp</p>
+                      <p class="card-text">Tu nivel: Nuevo</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <br>
+        <div class="col-md text-center">
+            <button class="btn btn-info" (click)="mostrarNiveles()">{{btnTexto}}</button>
+        </div>
+    </div>
+    <br>
+    <div *ngIf="mos" class="row">
+        <div class="col-md text-center">
+            <img [src]="imgNuevo" id="imgBasico" alt="">
+            <p>nivel Nuevo de 1 a 49 exp</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" (click)="infoNiveles('Nuevo')">Mostrar mas</button>
+            <br><br>
+        </div>
+        <div class="col-md text-center">
+            <img [src]="imgNovato" id="imgBasico" alt="">
+            <p>nivel Novato de 50 a 99 exp</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" (click)="infoNiveles('Novato')">Mostrar mas</button>
+            <br><br>
+        </div>
+        <div class="col-md text-center">
+            <img [src]="imgPrincipiante" id="imgBasico" alt="">
+            <p>nivel Nuevo de 100 a 149 exp</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" (click)="infoNiveles('Principiante')">Mostrar mas</button>
+            <br><br>
+        </div>
+        <div class="col-md text-center">
+            <img [src]="imgAvanzado" id="imgBasico" alt="">
+            <p>nivel Nuevo de 150 a 199 exp</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" (click)="infoNiveles('Avanzado')">Mostrar mas</button>
+            <br><br>
+        </div>
+        <div class="col-md text-center">
+            <img [src]="imgExperto" id="imgBasico" alt="">
+            <p>nivel Nuevo de 200 a 249 exp</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" (click)="infoNiveles('Experto')">Mostrar mas</button>
+            <br><br>
+        </div>
+        <div class="col-md text-center">
+            <img [src]="imgMaximus" id="imgBasico" alt="">
+            <p>nivel Nuevo de 250 a 99999 exp</p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" (click)="infoNiveles('Maximus')">Mostrar mas</button>
+            <br><br>
+        </div>
+    </div>
+</div>
+<br>
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Informacion acerca del nivel</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>{{info}}</p>
+  </div>
+</div>
+<br>
+<app-footer></app-footer>
