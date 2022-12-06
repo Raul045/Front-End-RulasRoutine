@@ -20,13 +20,13 @@
         </thead>
         <tbody class="text-center">
           <tr *ngFor="let usuario of usuariosArray">
-            <!-- <th scope="row" [innerHTML]="usuario."></th>
-            <td [innerHTML]="usuariosArray.nombre"></td>
-            <td [innerHTML]="usuario.apellido"></td>
-            <td [innerHTML]="usuario.edad"></td>
+            <td [innerHTML]="usuario.id"></td>
+            <td [innerHTML]="usuario.name"></td>
+            <td [innerHTML]="usuario.lastName"></td>
+            <td [innerHTML]="usuario.age"></td>
             <td [innerHTML]="usuario.email"></td>
-            <td [innerHTML]="usuario.experiencia"></td>
-            <td [innerHTML]="usuario.rol"></td> -->
+            <td [innerHTML]="usuario.experience"></td>
+            <td [innerHTML]="usuario.fk_roll"></td>
             <td class="form-group">
               <button class="btn btn-info mt-1" style="font-size: auto; width: auto; margin-right: 10px;">editar</button>
               <button class="btn btn-danger mt-1">eliminar</button>

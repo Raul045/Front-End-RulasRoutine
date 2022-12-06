@@ -6,6 +6,7 @@ import { Users, Users2 } from '../Models/users';
 import { environment } from 'src/environments/environment.prod';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { HAMMER_LOADER } from '@angular/platform-browser';
+import { Token } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,11 @@ export class UsersService {
 
   apiURL = environment.apiURL;
   jwtHelper: JwtHelperService = new JwtHelperService();
-  header = new HttpHeaders({'Type': 'application/json'});
+  token = localStorage.getItem('token')!;
+
+  header = new HttpHeaders({'Type': 'application/json','Authorization': `Bearer ${this.token}`  });
+
+
 
 
 
@@ -33,8 +38,15 @@ export class UsersService {
 
   mostarUsuarios():Observable<any>
   {
-      return  this.http.get(`${this.apiURL}usr/get_all`);
+      return this.http.get(`${this.apiURL}usr/get_all`);
   }
+
+  getUser():Observable<any>{
+     return this.http.get(`${this.apiURL}usr/get_all`, {
+      headers: this.header
+    });
+  }
+
 
 
 
@@ -66,4 +78,4 @@ export class UsersService {
 
   // }
 
-}
+
